@@ -1,22 +1,26 @@
-input[type="radio"]{
-			display: none;
-
-		}
-input[type="checkbox"]{
-			display: none;
-
+body{
+	padding:0px;
+	margin:15px;
+}
+input{
+	display: none;
 		}
  label{
 	cursor: pointer;
-	margin-right: 15px;
+	margin:5px 3px 0px 3px;
 }
  label i{
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	line-height: 16px;
 	background: url(images/bg.png) no-repeat left top;
 }
+label.select i.on{
+ 	background-position: -35px 0px;
+ }
  label i.checkbox{
-	background-position: 0px -23px;
+	background-position: 0px -21px;
 }
+ label i.on{
+ 	background-position: -35px -20px;
+ }

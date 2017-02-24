@@ -8,16 +8,27 @@
 <body>
 	<div>
 		<form action="#">
-			
 				<label for="1" class="select"><i></i><input type="radio" id="1" name="select"/></label>
-				<label for="2" class="select"><i></i><input type="radio" id="2" name="select"/></label>
+				<label for="2" class="select"><i ></i><input type="radio" id="2" name="select"/></label>
 				
 				<br />
 				<label for="3"> <i class="checkbox"></i></label><input type="checkbox" id="3" name="select2"/>
-				<label for="4"> <i class="checkbox"></i></label><input type="checkbox" id="4" name="select2"/>
+				<label for="4" > <i class="checkbox"></i></label><input type="checkbox" id="4" name="select2"/>
 		
 		</form>
 	</div>
+
+	<script>
+		function labelclick (){
+			var labeli = document.getElementsByTagName('i');
+			for(var i=0;i<labeli.length; i++){
+				labeli[i].onclick=function(){
+						this.setAttribute("class","on")		
+				};
+			}
+		}
+		window.onload=labelclick ();
+	</script>
 	
 </body>
 </html>
