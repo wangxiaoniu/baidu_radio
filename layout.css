@@ -1,0 +1,22 @@
+input[type="radio"]{
+			display: none;
+
+		}
+input[type="checkbox"]{
+			display: none;
+
+		}
+ label{
+	cursor: pointer;
+	margin-right: 15px;
+}
+ label i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	background: url(images/bg.png) no-repeat left top;
+}
+ label i.checkbox{
+	background-position: 0px -23px;
+}
