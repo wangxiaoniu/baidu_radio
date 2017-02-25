@@ -43,7 +43,7 @@ p.first input[type="radio"]:checked + label span{
 	left: 50%;
 	margin-left:-9px;
 }
-/*checkbox单选样式*/
+/*checkbox样式*/
 p.first input[type="checkbox"] ~ label::before{
 	content: " ";
 	width: 16px;
