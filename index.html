@@ -1,34 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="UTF-8">
-	<title>自定义选择及复选框</title>
+	<title>伪元素及背景图方法实现自定义选择and复选框</title>
 	<link rel="stylesheet" href="layout.css">
 </head>
 <body>
-	<div>
-		<form action="#">
-				<label for="1" class="select"><i></i><input type="radio" id="1" name="select"/></label>
-				<label for="2" class="select"><i ></i><input type="radio" id="2" name="select"/></label>
+	<div >
+		<form action="#" >
+				<p class="first">
+					<input type="radio" id="radio" name="radio" class="first" /><label for="radio"><span></span>a</label>
+					<input type="radio" id="radio2" name="radio" class="first"/><label for="radio2"><span></span>b</label>
+				</p>
+				<p class="first">
+					<input type="checkbox" id="checkbox" name="checkbox" class="first"/><label for="checkbox" ><span></span>c</label>
+					<input type="checkbox" id="checkbox2" name="checkbox" class="first"/><label for="checkbox2" ><span></span>d</label>
+				</p>
+				<p class="second">
+					<input type="radio" id="radio3" class="second" name="radio1"/><label for="radio3" >a1</label>
+					<input type="radio" id="radio4" class="second" name="radio1"/><label for="radio4" >b1</label>
+				</p>
+				<p class="second">
+					<input type="checkbox" id="checkbox3" class="second" name="checkbox1"/><label for="checkbox3" >c1</label>
+					<input type="checkbox" id="checkbox4" class="second" name="checkbox1" /><label for="checkbox4">d1</label>
+				</p>
 				
-				<br />
-				<label for="3"> <i class="checkbox"></i></label><input type="checkbox" id="3" name="select2"/>
-				<label for="4" > <i class="checkbox"></i></label><input type="checkbox" id="4" name="select2"/>
-		
 		</form>
 	</div>
 
-	<script>
-		function labelclick (){
-			var labeli = document.getElementsByTagName('i');
-			for(var i=0;i<labeli.length; i++){
-				labeli[i].onclick=function(){
-						this.setAttribute("class","on")		
-				};
-			}
-		}
-		window.onload=labelclick ();
-	</script>
+
+
 	
 </body>
 </html>
